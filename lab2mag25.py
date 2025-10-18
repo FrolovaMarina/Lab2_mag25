@@ -5,11 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score 
+from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
-
-from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 
 df = pd.read_csv('Coffee_sales.csv')
@@ -88,4 +86,5 @@ for index, value in enumerate(corr_fixed.values):
     
 plt.axvline(x=0, color='black', linestyle='-', alpha=0.3)
 plt.show()
+
 
